@@ -177,7 +177,7 @@ class AvinAuthService
                 $second = intval(config('avinauthconfig.resend_delay') - $diffInSeconds);
                 return [
                     'success' => false,
-                    'message' => "شما اخیرا درخواست داده اید, لطف $second ثانیه صبر کنید",
+                    'message' => "شما اخیرا درخواست داده اید, لطفا $second ثانیه صبر کنید",
                     'seconds' => intval(config('avinauthconfig.resend_delay') - $diffInSeconds)
                 ];
             }
@@ -234,7 +234,7 @@ class AvinAuthService
             $seconds = intval(config('avinauthconfig.resend_delay') - $created_at->diffInSeconds());
             return [
                 'success' => false,
-                'message' => "شما اخیرا درخواست داده اید, لطف $seconds ثانیه صبر کنید",
+                'message' => "شما اخیرا درخواست داده اید, لطفا $seconds ثانیه صبر کنید",
                 'seconds' => $seconds,
             ];
         } else {
